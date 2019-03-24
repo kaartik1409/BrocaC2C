@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignIn">
+
+    <TextView
+        android:id="@+id/greet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SIGN IN"
+        android:textColor="#B4ec51"
+        android:textSize="40dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="60dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="E-MAIL"
+        android:layout_below="@id/greet"
+        android:layout_marginStart="40dp"
+        android:id="@+id/ema"
+        android:textSize="15sp"
+        android:textColor="#000"
+        android:layout_marginTop="40dp"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/greet"
+        android:layout_marginTop="50dp"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:textColor="#B4ec51"
+        android:id="@+id/email"
+        android:layout_marginStart="40dp"
+        android:backgroundTint="#9f9f9f"
+        android:layout_marginEnd="40dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PASSWORD"
+        android:layout_below="@id/greet"
+        android:layout_marginStart="40dp"
+        android:textColor="#000"
+        android:id="@+id/pas"
+        android:textSize="15sp"
+        android:layout_marginTop="110dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/greet"
+        android:layout_marginTop="120dp"
+        android:backgroundTint="#9f9f9f"
+        android:textColor="#B4ec51"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:id="@+id/pass"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@id/pass"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="SIGN IN"
+        android:background="@drawable/sign"
+        android:textColor="#B4ec51"
+        android:textSize="25sp"/>
+
+
+
+</RelativeLayout>

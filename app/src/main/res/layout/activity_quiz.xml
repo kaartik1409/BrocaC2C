@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Quiz">
+
+    <ImageView
+        android:id="@+id/caar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="90dp"
+        android:src="@drawable/card"/>
+
+    <TextView
+        android:id="@+id/what"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="What is the correct spelling?"
+        android:layout_below="@id/caar"
+        android:layout_marginTop="-250dp"
+        android:textSize="20sp"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/caar"
+        android:layout_marginTop="-210dp"
+        android:layout_marginStart="80dp"
+        android:text="Apple"
+        android:textSize="20sp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/caar"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-210dp"
+        android:layout_marginEnd="90dp"
+        android:text="Appple"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/go"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:text="Continue"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:background="@drawable/purplegradient"
+        android:textColor="#FFF"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#FFF"
+    android:layout_height="match_parent"
+    tools:context=".ABCTest">
+
+    <TextView
+        android:id="@+id/greet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="INTRO"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textSize="40dp"
+        android:textColor="#61Ab2e"/>
+
+    <ImageButton
+        android:id="@+id/but"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_close_black_24dp"
+        android:background="#0000"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"/>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_marginStart="50dp"
+        android:id="@+id/card"
+        android:layout_marginEnd="50dp"
+        android:layout_height="match_parent"
+        android:layout_above="@id/hint"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@id/greet"
+        android:layout_marginTop="30dp"
+        app:cardCornerRadius="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A"
+                android:id="@+id/a"
+                android:textSize="40dp"
+                android:textColor="#000"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentEnd="true"/>
+
+            <LinearLayout
+                android:id="@+id/llMain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_below="@id/a"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Make the student draw in the figure"
+        android:id="@+id/hint"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:layout_marginBottom="20dp"
+        android:layout_above="@id/levvel"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:id="@+id/levvel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LEVEL 1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textSize="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:textColor="#61Ab2e"/>
+
+    <TextView
+        android:id="@+id/done"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:text="SUCCESS"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:visibility="gone"
+        android:textSize="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorAccent"
+        android:textColor="#FFF"/>
+
+</RelativeLayout>
